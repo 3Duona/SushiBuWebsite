@@ -36,63 +36,98 @@ function CreateCard(props) {
   );
 }
 
-const MenuBowl = () => {
+const MenuBao = () => {
   return (
     <Box>
       <Grid container spacing={2}>
+        <Grid item xs={12} md={12} l={12}>
+          <CreateCard
+            name="Visi wok pateikiami su VIENODAIS PREIDAIS"
+            desc="()"
+            price=""
+            img=""
+          ></CreateCard>
+        </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="1. SAKE"
-            desc="(Lašiša, agurkas, sezamas)"
-            price="4.50"
+            name="31. TORI"
+            desc="(Su vištiena)"
+            price="8.50"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="2. SAKE AVOCADO"
-            desc="(Lašiša, avokadas, majonezo padažas)"
-            price="4.70"
+            name="32. EBI"
+            desc="(Su krevetėm)"
+            price="8.90"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="3. TEKKA"
-            desc="(Tunas, agurkas, karai padažas)"
-            price="4.90"
+            name="33. TORI"
+            desc="(Su traškiu baklažanu)"
+            price="7.90"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={12} l={12}>
+          <CreateCard name="UŽKANDŽIAI" desc="()" price="" img=""></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="37. WAKAME"
+            desc="(Wakame, agurkas, sweet čili morka, edamame pupelės, sezamas, iceberg salota)"
+            price="5.50"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="4. EBI"
-            desc="(Traški tigrinė krevetė, avokadas, karai padažas)"
-            price="4.80"
+            name="38. YAKI EBI"
+            desc="(Traškios tigrinės krevetės 6 vnt.)"
+            price="6.90"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="5. KANI"
-            desc="(Krabų lazdelės, agurkas, majonezo padažas)"
-            price="4.30"
+            name="39. KATSU TORI"
+            desc="(Traškios vištienos juostelės 6 vnt.)"
+            price="5.90"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="6. UNAGI"
-            desc="(Ungurys, teriyaki padažas, agurkas, sezamas)"
-            price="6.50"
+            name="40. SŪRIO SPURGYTĖS"
+            desc="(Sūrio spurgytės 6 vnt.)"
+            price="5.90"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="7. BOWLASSADASD"
-            desc="(Jūros dumbliai, agurkas, sezamas, karai padažas)"
-            price="4.20"
+            name="41. KALMARŲ ŽIEDAI"
+            desc="(Kalmarų žiedai 8 vnt.)"
+            price="5.50"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="42. SPRING ROLLS"
+            desc="(Daržovės tešloje 8 vnt.)"
+            price="5.20"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="43. UŽKANDŽIŲ RINKINYS"
+            desc="(Traškios tigrinės krevetės 4 vnt, Sūrio spurgytės 4vnt, Spring rolls 4vnt, Kalmarų žiedai 4vnt.)"
+            price="12.50"
             img={sushi_1}
           ></CreateCard>
         </Grid>
@@ -101,4 +136,4 @@ const MenuBowl = () => {
   );
 };
 
-export default MenuBowl;
+export default MenuBao;

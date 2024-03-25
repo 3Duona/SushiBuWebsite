@@ -36,63 +36,103 @@ function CreateCard(props) {
   );
 }
 
-const MenuSnack = () => {
+const MenuBowl = () => {
   return (
     <Box>
       <Grid container spacing={2}>
+        <Grid item xs={12} md={12} l={12}>
+          <CreateCard
+            name="Visi dubenėliai ruošiami su VIENODAIS PREIDAIS"
+            desc="()"
+            price=""
+            img=""
+          ></CreateCard>
+        </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="1. SAKE"
-            desc="(Lašiša, agurkas, sezamas)"
-            price="4.50"
+            name="25. SAKE POKE"
+            desc="(Su lašiša)"
+            price="8.00"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="2. SAKE AVOCADO"
-            desc="(Lašiša, avokadas, majonezo padažas)"
-            price="4.70"
+            name="26. MAGURO POKE"
+            desc="(Su tunu)"
+            price="8.50"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="3. TEKKA"
-            desc="(Tunas, agurkas, karai padažas)"
-            price="4.90"
+            name="27. EBI POKE"
+            desc="(Su tunu ir lašiša)"
+            price="8.20"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="4. EBI"
-            desc="(Traški tigrinė krevetė, avokadas, karai padažas)"
-            price="4.80"
+            name="28. YAKI EBI POKE"
+            desc="(Su traškia krevete)"
+            price="8.50"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="5. KANI"
-            desc="(Krabų lazdelės, agurkas, majonezo padažas)"
-            price="4.30"
+            name="29. CRUNCHY TORI POKE"
+            desc="(Su traškia vištiena)"
+            price="7.90"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="6. UNAGI"
-            desc="(Ungurys, teriyaki padažas, agurkas, sezamas)"
-            price="6.50"
+            name="30. NASU PANKO POKE"
+            desc="(Su traškiu baklažanu)"
+            price="7.50"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={12} l={12}>
+          <CreateCard
+            name="BAO BANDELES"
+            desc="()"
+            price=""
+            img=""
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="34. TORI"
+            desc="(Traški vištiena, sweet čili morka, iceberg, karai padažas, sezamas)"
+            price="4.40/8.30"
             img={sushi_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="7. SNACKKKKKAI"
-            desc="(Jūros dumbliai, agurkas, sezamas, karai padažas)"
-            price="4.20"
+            name="35. EBI"
+            desc="(Traški tigrinė krevetė, ikrai, avokadas, svogūnų traškučiai, teriyaki padažas, sezamas)"
+            price="4.70/8.90"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="36. NASU"
+            desc="(Traškus baklažanas, sweet čili morka, sūrio kremas, sezamas, teriyaki padažas)"
+            price="4.00/7.50"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="Trijų bao rinkinys"
+            desc="(Tori bao, ebi bao, nasu bao)"
+            price="12.00"
             img={sushi_1}
           ></CreateCard>
         </Grid>
@@ -101,4 +141,4 @@ const MenuSnack = () => {
   );
 };
 
-export default MenuSnack;
+export default MenuBowl;

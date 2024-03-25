@@ -17,9 +17,9 @@ import { Link } from "react-router-dom";
 
 const pages = {
   Sushi: "MenuSushi",
-  Bowl: "MenuBowl",
-  Bao: "MenuBao",
-  Snack: "MenuSnack",
+  "Sushi Sets": "MenuSet",
+  "Bowl & Bao": "MenuBowlBao",
+  "Wok & Snack": "MenuWokSnack",
 };
 
 function Header() {
@@ -42,7 +42,7 @@ function Header() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -53,7 +53,7 @@ function Header() {
               textDecoration: "none",
             }}
           >
-            Sushi bū
+            SUSHI BŪ
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -111,7 +111,7 @@ function Header() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -123,7 +123,7 @@ function Header() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            SUSHI BŪ
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {Object.entries(pages).map(([displayName, routePath]) => (

@@ -4,12 +4,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Map from "./components/Map";
 import { Container } from "@mui/material";
-import { Route, Routes, Navigate } from "react-router";
+import { Route, Routes } from "react-router";
 import Banner from "./components/Banner";
+import MenuSelector from "./components/MenuSelector";
 import MenuSushi from "./components/MenuSushi";
-import MenuBowl from "./components/MenuBowl";
-import MenuBao from "./components/MenuBao";
-import MenuSnack from "./components/MenuSnack";
+import MenuBowl from "./components/MenuBowlBao";
+import MenuBao from "./components/MenuWokSnack";
+import MenuSet from "./components/MenuSet";
 
 function App() {
   return (
@@ -25,11 +26,11 @@ function App() {
       <Header />
       <Banner />
       <Routes>
-        <Route path="/" element={<Navigate to="/MenuSushi" />} />
+        <Route path="/" element={<MenuSelector />} />
         <Route path="/MenuSushi" element={<MenuSushi />} />
-        <Route path="/MenuBowl" element={<MenuBowl />} />
-        <Route path="/MenuBao" element={<MenuBao />} />
-        <Route path="/MenuSnack" element={<MenuSnack />} />
+        <Route path="/MenuBowlBao" element={<MenuBowl />} />
+        <Route path="/MenuWokSnack" element={<MenuBao />} />
+        <Route path="/MenuSet" element={<MenuSet />} />
       </Routes>
 
       <Map />
