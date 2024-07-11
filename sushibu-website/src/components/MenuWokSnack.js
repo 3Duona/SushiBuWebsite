@@ -42,8 +42,8 @@ const MenuBao = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} l={12}>
           <CreateCard
-            name="Visi wok pateikiami su VIENODAIS PREIDAIS"
-            desc="()"
+            name="Visi wok pateikiami su VIENODAIS PREIDAIS: morka, česnakas, cukinija, edamame pupelės, paprika, pievagrybiai, imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas"
+            desc={"Pasirinkite su Ryžiais ar makaronais \n Pasirinkite padažą: sweet čili, aštrus, teriyaki"}
             price=""
             img=""
           ></CreateCard>
@@ -73,7 +73,7 @@ const MenuBao = () => {
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={12} l={12}>
-          <CreateCard name="UŽKANDŽIAI" desc="()" price="" img=""></CreateCard>
+          <CreateCard name="UŽKANDŽIAI" desc="Pasirinkite padažą: sweet čili, aštrus, teriyaki, krapų, sojos, majonezo" price="" img=""></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
