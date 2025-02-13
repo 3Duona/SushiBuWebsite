@@ -48,25 +48,25 @@ function Header() {
               <MenuIcon />
             </IconButton>
             <Menu
-  id="menu-appbar"
-  anchorEl={anchorElNav}
-  anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
-  keepMounted
-  transformOrigin={{ vertical: "top", horizontal: "left" }}
-  open={Boolean(anchorElNav)}
-  onClose={handleCloseNavMenu}
-  sx={{
-    display: { xs: "block", md: "none" },
-    "& .MuiPaper-root": {
-      backgroundColor: "black",  // Set the dropdown background color to black
-    },
-    "& .MuiMenuItem-root": {
-      color: "white",  // Set text color inside the dropdown to white
-    },
-  }}
->
-  {renderMenuItems("white")}
-</Menu>
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+              keepMounted
+              transformOrigin={{ vertical: "top", horizontal: "left" }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+                "& .MuiPaper-root": {
+                  backgroundColor: "black",  // Set the dropdown background color to black
+                },
+                "& .MuiMenuItem-root": {
+                  color: "white",  // Set text color inside the dropdown to white
+                },
+              }}
+            >
+              {renderMenuItems("white")}
+          </Menu>
           </Box>
 
           {/* LOGO + NAME + MENU ITEMS CONTAINER (LEFT-ALIGNED) */}
