@@ -22,8 +22,6 @@ function CreateCard(props) {
     >
       <CardContent style={{ padding: 0 }}>
         <Grid container spacing={0}>
-
-
           {/* Product Image - No Margins or Padding, Fully Stretched */}
           <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
           <img
@@ -38,8 +36,8 @@ function CreateCard(props) {
             }}
           />
           </Grid>
-                    {/* Product Description */}
-                    <Grid
+          {/* Product Description */}
+          <Grid
             item
             xs={12}
             md={6}
@@ -73,7 +71,7 @@ function CreateCard(props) {
                 ))}
               </ul>
             )}
-
+            
             <Typography variant="h5" align="left" sx={{ marginTop: "auto" }}>
               {props.price} €
             </Typography>

@@ -10,8 +10,9 @@ import {
   MenuItem,
   Container,
 } from "@mui/material";
+
 import MenuIcon from "@mui/icons-material/Menu";
-import AdbIcon from "@mui/icons-material/Adb";
+import HeaderLogo from "../contents/MainLogoSushiBu.jpg";
 
 const pages = {
   SUSHI: "MenuSushi",
@@ -71,8 +72,19 @@ function Header() {
 
           {/* LOGO + NAME + MENU ITEMS CONTAINER (LEFT-ALIGNED) */}
           <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-            <AdbIcon sx={{ mr: 1 }} />
-            <Typography
+            
+          <Link to="/">
+            <img
+              src={HeaderLogo}
+              alt="Logo"
+              style={{
+                width: "100px",
+                height: "auto",
+              }}
+            />
+          </Link>
+
+            {/* <Typography
               variant="h6"
               noWrap
               component="a"
@@ -87,7 +99,7 @@ function Header() {
               }}
             >
               SUSHI BŪ
-            </Typography>
+            </Typography> */}
 
             {/* DESKTOP MENU ITEMS (ALIGNED LEFT) */}
             <Box sx={{ display: { xs: "none", md: "flex" } }}>{renderMenuItems("white")}</Box>
