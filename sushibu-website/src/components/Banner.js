@@ -10,6 +10,7 @@ const Banner = () => {
     <Container
       disableGutters={true}
       style={{
+        padding: "16px",
         textAlign: "center",
         backgroundColor: "none",
         color: "white", // Apply white text color to all content inside the banner
