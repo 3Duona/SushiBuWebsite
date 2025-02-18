@@ -12,21 +12,9 @@ import MenuBowl from "./components/MenuBowlBao";
 import MenuBao from "./components/MenuWokSnack";
 import MenuSet from "./components/MenuSet";
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { CssBaseline } from '@mui/material';  // To apply global styles
-
-// Create a custom theme
-const theme = createTheme({
-  typography: {
-    fontFamily: "'Quicksand', sans-serif",  // Set Quicksand as the default font
-  },
-});
-
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />  {/* This applies default MUI styles and resets CSS */}
-      <Container
+    <Container
       disableGutters={true}
       style={{
         alignItems: "center",
@@ -49,7 +37,6 @@ function App() {
       <Map />
       <Footer />
     </Container>
-    </ThemeProvider>
   );
 }
 

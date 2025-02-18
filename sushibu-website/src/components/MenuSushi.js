@@ -22,8 +22,24 @@ function CreateCard(props) {
     >
       <CardContent style={{ padding: 0 }}>
         <Grid container spacing={0}>
-          {/* Product Description */}
-          <Grid
+
+
+          {/* Product Image - No Margins or Padding, Fully Stretched */}
+          <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
+          <img
+            src={props.img}
+            alt="Not loading"
+            style={{
+              width: "100%",
+              height: "auto",
+              objectFit: "cover",
+              display: "block",
+              maxHeight: isMobile ? "200px" : "500px", // Mobile: 200px, Desktop: 500px
+            }}
+          />
+          </Grid>
+                    {/* Product Description */}
+                    <Grid
             item
             xs={12}
             md={6}
@@ -61,21 +77,6 @@ function CreateCard(props) {
             <Typography variant="h5" align="left" sx={{ marginTop: "auto" }}>
               {props.price} €
             </Typography>
-          </Grid>
-
-          {/* Product Image - No Margins or Padding, Fully Stretched */}
-          <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
-          <img
-            src={props.img}
-            alt="Not loading"
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "cover",
-              display: "block",
-              maxHeight: isMobile ? "200px" : "500px", // Mobile: 200px, Desktop: 500px
-            }}
-          />
           </Grid>
         </Grid>
       </CardContent>
