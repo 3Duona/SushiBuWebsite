@@ -1,52 +1,53 @@
 import React from "react";
-import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
+import { Box, Grid} from "@mui/material";
+// import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
+import CreateCard from "./CreateCard";
+import CreateCardSeparator from "./CreateCardSeparator";
 
 import sushi_1 from "../contents/TestSushi.png";
 
-function CreateCard(props) {
-  return (
-    <Card variant="outlined" style={{ backgroundColor: "grey" }}>
-      <CardContent>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={9}>
-            <Grid container justifyContent="space-between">
-              <Grid item>
-                <Typography variant="h5" align="left">
-                  {props.name}
-                </Typography>
-              </Grid>
-              <Grid item>
-                <Typography variant="h5" align="right">
-                  {props.price}
-                </Typography>
-              </Grid>
-            </Grid>
-            <Typography variant="body2">{props.desc}</Typography>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <img
-              src={props.img}
-              alt={"Not loading"}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
-          </Grid>
-        </Grid>
-      </CardContent>
-    </Card>
-  );
-}
+// function CreateCard(props) {
+//   return (
+//     <Card variant="outlined" style={{ backgroundColor: "grey" }}>
+//       <CardContent>
+//         <Grid container spacing={2}>
+//           <Grid item xs={12} md={9}>
+//             <Grid container justifyContent="space-between">
+//               <Grid item>
+//                 <Typography variant="h5" align="left">
+//                   {props.name}
+//                 </Typography>
+//               </Grid>
+//               <Grid item>
+//                 <Typography variant="h5" align="right">
+//                   {props.price}
+//                 </Typography>
+//               </Grid>
+//             </Grid>
+//             <Typography variant="body2">{props.desc}</Typography>
+//           </Grid>
+//           <Grid item xs={12} md={3}>
+//             <img
+//               src={props.img}
+//               alt={"Not loading"}
+//               style={{ width: "100%", height: "100%", objectFit: "cover" }}
+//             />
+//           </Grid>
+//         </Grid>
+//       </CardContent>
+//     </Card>
+//   );
+// }
 
 const MenuBowl = () => {
   return (
     <Box>
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} l={12}>
-          <CreateCard
+          <CreateCardSeparator
             name="Visi dubenėliai ruošiami su VIENODAIS PREIDAIS: ryžiai, agurkas, edamame pupelės, sweet čili morkos, wakame, marinuotas imbieras, citrina, nori lapai, iceberg salota"
             desc="Pasirinktinai padažas: Sweet čili, teriyaki, krapų, čili, karai"
-            price=""
-            img=""
-          ></CreateCard>
+          ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
@@ -97,12 +98,10 @@ const MenuBowl = () => {
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={12} l={12}>
-          <CreateCard
+          <CreateCardSeparator
             name="BAO BANDELES"
             desc="Kaina 1vnt/2vnt"
-            price=""
-            img=""
-          ></CreateCard>
+          ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard

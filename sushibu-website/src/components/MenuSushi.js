@@ -1,86 +1,87 @@
 import React from "react";
-import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
+import { Box, Grid} from "@mui/material";
+// import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
+// import { useMediaQuery, useTheme } from "@mui/material";
+import CreateCard from "./CreateCard";
 
 import sushi_1 from "../contents/TestSushi.png";
 
-import { useMediaQuery, useTheme } from "@mui/material";
+// function CreateCard(props) {
+//   const theme = useTheme();
+//   const isMobile = useMediaQuery(theme.breakpoints.down("md")); // Check if screen is xs (mobile)
 
-function CreateCard(props) {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md")); // Check if screen is xs (mobile)
+//   return (
+//     <Card
+//       variant="outlined"
+//       style={{
+//         backgroundColor: 'rgba(52, 52, 52, 0.5)',
+//         margin: 0,
+//         padding: 0,
+//         border: "1px solid white",
+//         borderRadius: "20px",
+//       }}
+//     >
+//       <CardContent style={{ padding: 0 }}>
+//         <Grid container spacing={0}>
+//           {/* Product Image - No Margins or Padding, Fully Stretched */}
+//           <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
+//           <img
+//             src={props.img}
+//             alt="Not loading"
+//             style={{
+//               width: "100%",
+//               height: "auto",
+//               objectFit: "cover",
+//               display: "block",
+//               maxHeight: isMobile ? "200px" : "500px", // Mobile: 200px, Desktop: 500px
+//             }}
+//           />
+//           </Grid>
+//           {/* Product Description */}
+//           <Grid
+//             item
+//             xs={12}
+//             md={6}
+//             sx={{
+//               padding: "16px",
+//               color: "white",
+//               display: "flex",
+//               flexDirection: "column",
+//               justifyContent: "space-between",
+//               height: "100%",
+//             }}
+//           >
+//             {/* Name at the top, aligned left */}
+//             <Typography variant="h5" align="left">
+//               {props.name}
+//             </Typography>
 
-  return (
-    <Card
-      variant="outlined"
-      style={{
-        backgroundColor: 'rgba(52, 52, 52, 0.5)',
-        margin: 0,
-        padding: 0,
-        border: "1px solid white",
-        borderRadius: "20px",
-      }}
-    >
-      <CardContent style={{ padding: 0 }}>
-        <Grid container spacing={0}>
-          {/* Product Image - No Margins or Padding, Fully Stretched */}
-          <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
-          <img
-            src={props.img}
-            alt="Not loading"
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "cover",
-              display: "block",
-              maxHeight: isMobile ? "200px" : "500px", // Mobile: 200px, Desktop: 500px
-            }}
-          />
-          </Grid>
-          {/* Product Description */}
-          <Grid
-            item
-            xs={12}
-            md={6}
-            sx={{
-              padding: "16px",
-              color: "white",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              height: "100%",
-            }}
-          >
-            {/* Name at the top, aligned left */}
-            <Typography variant="h5" align="left">
-              {props.name}
-            </Typography>
-
-            {/* Description - Different for mobile and desktop */}
-            {isMobile ? (
-              // Mobile view - inline text
-              <Typography variant="body2">
-                {props.desc}
-              </Typography>
-            ) : (
-              // Desktop view - listed items
-              <ul style={{ paddingLeft: "20px", marginTop: "8px", marginBottom: "8px" }}>
-                {props.desc.split(",").map((item, index) => (
-                  <li key={index}>
-                    <Typography variant="body2">{item.trim()}</Typography>
-                  </li>
-                ))}
-              </ul>
-            )}
+//             {/* Description - Different for mobile and desktop */}
+//             {isMobile ? (
+//               // Mobile view - inline text
+//               <Typography variant="body2">
+//                 {props.desc}
+//               </Typography>
+//             ) : (
+//               // Desktop view - listed items
+//               <ul style={{ paddingLeft: "20px", marginTop: "8px", marginBottom: "8px" }}>
+//                 {props.desc.split(",").map((item, index) => (
+//                   <li key={index}>
+//                     <Typography variant="body2">{item.trim()}</Typography>
+//                   </li>
+//                 ))}
+//               </ul>
+//             )}
             
-            <Typography variant="h5" align="left" sx={{ marginTop: "auto" }}>
-              {props.price} €
-            </Typography>
-          </Grid>
-        </Grid>
-      </CardContent>
-    </Card>
-  );
-}
+//             <Typography variant="h5" align="left" sx={{ marginTop: "auto" }}>
+//               {props.price} €
+//             </Typography>
+//           </Grid>
+//         </Grid>
+//       </CardContent>
+//     </Card>
+//   );
+// }
 
 const MenuSushi = () => {
   return (
@@ -275,6 +276,14 @@ const MenuSushi = () => {
             name="24. YASAI TEMPURA"
             desc="Tempuroje keptas baklažanas, Sūrio kremas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas"
             price="6.90"
+            img={sushi_1}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="25. MAX Testing"
+            desc="Tempuroje keptas baklažanas Tempuroje keptas baklažanas Tempuroje keptas baklažanas Tempuroje keptas baklažanas Tempuroje keptas baklažanas, Sūrio kremas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas"
+            price="7000000000000000000000000.90"
             img={sushi_1}
           ></CreateCard>
         </Grid>

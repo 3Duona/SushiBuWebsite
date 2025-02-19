@@ -56,7 +56,7 @@ const MenuSelector = () => {
   return (
     <Box>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} l={4}>
+        <Grid item xs={12} md={3}>
           <CreateCard
             name="Sushi"
             desc=""
@@ -65,7 +65,7 @@ const MenuSelector = () => {
             redirect="/MenuSushi"
           />
         </Grid>
-        <Grid item xs={12} md={6} l={4}>
+        <Grid item xs={12} md={3}>
           <CreateCard
             name="Sushi Sets"
             desc=""
@@ -74,7 +74,7 @@ const MenuSelector = () => {
             redirect="/MenuSet"
           />
         </Grid>
-        <Grid item xs={12} md={6} l={4}>
+        <Grid item xs={12} md={3}>
           <CreateCard
             name="Bowls and Bao"
             desc=""
@@ -83,7 +83,7 @@ const MenuSelector = () => {
             redirect="/MenuBowlBao"
           />
         </Grid>
-        <Grid item xs={12} md={6} l={4}>
+        <Grid item xs={12} md={3}>
           <CreateCard
             name="Wok and Snacks"
             desc=""

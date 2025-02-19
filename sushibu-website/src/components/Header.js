@@ -32,7 +32,7 @@ function Header() {
     Object.entries(pages).map(([displayName, routePath]) => (
       <MenuItem key={routePath} onClick={handleCloseNavMenu}>
         <Typography textAlign="center">
-          <Link style={{ textDecoration: "none", color }} to={`/${routePath}`}>
+          <Link style={{ textDecoration: "none", fontWeight: "bold", color }} to={`/${routePath}`}>
             {displayName}
           </Link>
         </Typography>

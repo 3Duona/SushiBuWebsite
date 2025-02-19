@@ -23,3 +23,13 @@ code {
   background-color: black !important;
   border-radius: 0px 0px 20px 20px; /* Rounded only at bottom */
 }
+
+.footer {
+  background-color: black !important;
+  border-radius: 20px 20px 0px 0px; /* Rounded only at top */
+}
+
+.navmap {
+  overflow: hidden;
+  border-radius: 20px;
+}
