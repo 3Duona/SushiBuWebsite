@@ -15,14 +15,13 @@ function CreateCardSeparator(props) {
     >
       <CardContent>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={12}>
-            <Grid container justifyContent="space-between">
-                <Grid item sx={{color: "white"}}>
-                  <Typography variant="h5" align="left">
-                    {props.name}
-                  </Typography>
-              </Grid>
-            </Grid>
+          <Grid item xs={12} md={2} container justifyContent="center" alignItems="center">
+            <Typography variant={props.titleVariant || "h3"} align="center" sx={{ color: "white" }}>
+              {props.name}
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={10} container justifyContent="middle" alignItems="center">
             <Typography variant="body2" sx={{color: "white"}} style={{ whiteSpace: "pre-line" }}>
               {props.desc}
             </Typography>

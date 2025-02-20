@@ -4,7 +4,8 @@ import { Box, Grid} from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
-import sushi_1 from "../contents/TestSushi.png";
+import wok_1 from "../contents/WokSnack_Wok.jpg";
+import snack_1 from "../contents/WokSnack_43_Set.jpg";
 
 // function CreateCard(props) {
 //   return (
@@ -44,95 +45,96 @@ const MenuBao = () => {
     <Box>
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} l={12}>
-          <CreateCardSeparator
-            name="Visi wok pateikiami su VIENODAIS PREIDAIS: morka, česnakas, cukinija, edamame pupelės, paprika, pievagrybiai, imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas"
-            desc={"Pasirinkite su Ryžiais ar makaronais \n Pasirinkite padažą: sweet čili, aštrus, teriyaki"}
-          ></CreateCardSeparator>
+          <CreateCardSeparator 
+            name="WOK" 
+            desc={"Visi Wok pateikiami su VIENODAIS PRIEDAIS: morka, česnakas, cukinija, edamame pupelės, paprika, pievagrybiai, imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas \n Pasirinkite su Ryžiais ar Makaronais \n Pasirinkite padažą: Sweet čili, Aštrus,Teriyaki"}>
+          </CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="31. TORI"
-            desc="(Su vištiena)"
+            desc="Su vištiena"
             price="8.50"
-            img={sushi_1}
+            img={wok_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="32. EBI"
-            desc="(Su krevetėm)"
+            desc="Su krevetėm"
             price="8.90"
-            img={sushi_1}
+            img={wok_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
-            name="33. TORI"
-            desc="(Su traškiu baklažanu)"
+            name="33. NASU"
+            desc="Su traškiu baklažanu"
             price="7.90"
-            img={sushi_1}
+            img={wok_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={12} l={12}>
           <CreateCardSeparator 
             name="UŽKANDŽIAI" 
-            desc="Pasirinkite padažą: sweet čili, aštrus, teriyaki, krapų, sojos, majonezo">
-          </CreateCardSeparator>
+            desc="Pasirinkite padažą: Sweet čili, Aštrus, Teriyaki, Krapų, Sojos, Majonezo"
+            titleVariant="h5"
+          ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="37. WAKAME"
-            desc="(Wakame, agurkas, sweet čili morka, edamame pupelės, sezamas, iceberg salota)"
+            desc="Wakame, Agurkas, Sweet čili morka, Edamame pupelės, Sezamas, Iceberg salota"
             price="5.50"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="38. YAKI EBI"
-            desc="(Traškios tigrinės krevetės 6 vnt.)"
+            desc="Traškios tigrinės krevetės 6 vnt"
             price="6.90"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="39. KATSU TORI"
-            desc="(Traškios vištienos juostelės 6 vnt.)"
+            desc="Traškios vištienos juostelės 6 vnt"
             price="5.90"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="40. SŪRIO SPURGYTĖS"
-            desc="(Sūrio spurgytės 6 vnt.)"
+            desc="Sūrio spurgytės 6 vnt"
             price="5.90"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="41. KALMARŲ ŽIEDAI"
-            desc="(Kalmarų žiedai 8 vnt.)"
+            desc="Kalmarų žiedai 8 vnt"
             price="5.50"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="42. SPRING ROLLS"
-            desc="(Daržovės tešloje 8 vnt.)"
+            desc="Daržovės tešloje 8 vnt"
             price="5.20"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="43. UŽKANDŽIŲ RINKINYS"
-            desc="(Traškios tigrinės krevetės 4 vnt, Sūrio spurgytės 4vnt, Spring rolls 4vnt, Kalmarų žiedai 4vnt.)"
+            desc="Traškios tigrinės krevetės 4 vnt, Sūrio spurgytės 4vnt, Spring rolls 4vnt, Kalmarų žiedai 4vnt"
             price="12.50"
-            img={sushi_1}
+            img={snack_1}
           ></CreateCard>
         </Grid>
       </Grid>

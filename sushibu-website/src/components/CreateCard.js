@@ -59,8 +59,13 @@ function CreateCard({ name, price, img, desc }) {
               height: "100%",
             }}
           >
-            <Typography variant="h5" align="left" sx={{ fontWeight: "bold" }}>
-              {name}
+            <Typography variant="h5" align="left" >
+              {name.split(";").map((part, index) => (
+                <span key={index} style={{ fontWeight: index === 0 ? "bold" : "normal" }}>
+                  {part}
+                  {/* <br /> */}
+                </span>
+              ))}
             </Typography>
 
             {isMobile ? (

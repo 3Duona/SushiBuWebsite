@@ -1,6 +1,11 @@
 import React from "react";
-import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
+import { Box, Grid, Card, CardContent } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
+import MenuSelector_Sushi from "../contents/MenuSelector_Sushi.jpg";
+import MenuSelector_SushiSet from "../contents/MenuSelector_SushiSet.jpg";
+import MenuSelector_BowlBao from "../contents/MenuSelector_BowlBao.jpg";
+import MenuSelector_WokSnack from "../contents/MenuSelector_WokSnack.jpg";
 
 function CreateCard(props) {
   const navigate = useNavigate();
@@ -16,14 +21,17 @@ function CreateCard(props) {
   return (
     <div onClick={handleClick} style={{ cursor: "pointer" }}>
       <Card
-        hoverable
         variant="outlined"
-        style={{ backgroundColor: "grey", transition: "background-color 0.3s" }}
-        sx={{ "&:hover": { backgroundColor: "lightgrey" } }}
+        style={{         
+          margin: 0,
+          padding: 0,
+          border: "1px solid white",
+          borderRadius: "20px",
+        }}
       >
-        <CardContent>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={9}>
+        <CardContent style={{ padding: 0, margin: 0, position: "relative" }}>
+          <Grid container spacing={0}>
+            {/* <Grid item xs={12} md={9}>
               <Grid container justifyContent="space-between">
                 <Grid item>
                   <Typography variant="h5" align="left">
@@ -37,12 +45,24 @@ function CreateCard(props) {
                 </Grid>
               </Grid>
               <Typography variant="body2">{props.desc}</Typography>
-            </Grid>
-            <Grid item xs={12} md={3}>
+            </Grid> */}
+            {/* <Grid item xs={12} md={12}>
               <img
                 src={props.img}
                 alt={"Not loading"}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </Grid> */}
+            <Grid item xs={12} md={12} style={{ padding: 0, margin: 0, position: "relative" }}>
+              <img
+                src={props.img}
+                alt="Not loading"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                  display: "block",
+                }}
               />
             </Grid>
           </Grid>
@@ -56,39 +76,39 @@ const MenuSelector = () => {
   return (
     <Box>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <CreateCard
             name="Sushi"
             desc=""
             price=""
-            img=""
+            img={MenuSelector_Sushi}
             redirect="/MenuSushi"
           />
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <CreateCard
             name="Sushi Sets"
             desc=""
             price=""
-            img=""
+            img={MenuSelector_SushiSet}
             redirect="/MenuSet"
           />
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <CreateCard
             name="Bowls and Bao"
             desc=""
             price=""
-            img=""
+            img={MenuSelector_BowlBao}
             redirect="/MenuBowlBao"
           />
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <CreateCard
             name="Wok and Snacks"
             desc=""
             price=""
-            img=""
+            img={MenuSelector_WokSnack}
             redirect="/MenuWokSnack"
           />
         </Grid>

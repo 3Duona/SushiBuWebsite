@@ -3,6 +3,7 @@ import { Box, Grid} from "@mui/material";
 // import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
 // import { useMediaQuery, useTheme } from "@mui/material";
 import CreateCard from "./CreateCard";
+import CreateCardSeparator from "./CreateCardSeparator";
 
 import sushi_1 from "../contents/TestSushi.png";
 
@@ -87,6 +88,12 @@ const MenuSushi = () => {
   return (
     <Box>
       <Grid container spacing={2}>
+        <Grid item xs={12} md={12} l={12}>
+          <CreateCardSeparator
+            name="SUSHI"
+            desc="Sushi gali būti apkepti, kaina 1eur už apkepimą"
+          ></CreateCardSeparator>
+        </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="1. SAKE"

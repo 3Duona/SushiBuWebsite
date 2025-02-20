@@ -78,7 +78,7 @@ function Header() {
               src={HeaderLogo}
               alt="Logo"
               style={{
-                width: "100px",
+                width: "80px",
                 height: "auto",
               }}
             />
