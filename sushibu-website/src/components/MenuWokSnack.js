@@ -13,39 +13,6 @@ import iconVeganDefault from "../contents/Icons/Icon_VeganDefault.png";
 import wok_1 from "../contents/WokSnack_Wok.jpg";
 import snack_1 from "../contents/WokSnack_43_Set.jpg";
 
-// function CreateCard(props) {
-//   return (
-//     <Card variant="outlined" style={{ backgroundColor: "grey" }}>
-//       <CardContent>
-//         <Grid container spacing={2}>
-//           <Grid item xs={12} md={9}>
-//             <Grid container justifyContent="space-between">
-//               <Grid item>
-//                 <Typography variant="h5" align="left">
-//                   {props.name}
-//                 </Typography>
-//               </Grid>
-//               <Grid item>
-//                 <Typography variant="h5" align="right">
-//                   {props.price}
-//                 </Typography>
-//               </Grid>
-//             </Grid>
-//             <Typography variant="body2">{props.desc}</Typography>
-//           </Grid>
-//           <Grid item xs={12} md={3}>
-//             <img
-//               src={props.img}
-//               alt={"Not loading"}
-//               style={{ width: "100%", height: "100%", objectFit: "cover" }}
-//             />
-//           </Grid>
-//         </Grid>
-//       </CardContent>
-//     </Card>
-//   );
-// }
-
 const MenuBao = () => {
   return (
     <Box>

@@ -12,41 +12,6 @@ import sushiSet_3 from "../contents/SushiSet_Bu3.jpg";
 import sushiSet_4 from "../contents/SushiSet_Bu4.jpg";
 import sushiSet_5 from "../contents/SushiSet_Bu5.jpg";
 
-// function CreateCard(props) {
-//   return (
-//     <Card variant="outlined" style={{ backgroundColor: "grey" }}>
-//       <CardContent>
-//         <Grid container spacing={2}>
-//           <Grid item xs={12} md={9}>
-//             <Grid container justifyContent="space-between">
-//               <Grid item>
-//                 <Typography variant="h5" align="left">
-//                   {props.name}
-//                 </Typography>
-//               </Grid>
-//               <Grid item>
-//                 <Typography variant="h5" align="right">
-//                   {props.price}
-//                 </Typography>
-//               </Grid>
-//             </Grid>
-//             <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
-//               {props.desc}
-//             </Typography>
-//           </Grid>
-//           <Grid item xs={12} md={3}>
-//             <img
-//               src={props.img}
-//               alt={"Not loading"}
-//               style={{ width: "100%", height: "100%", objectFit: "cover" }}
-//             />
-//           </Grid>
-//         </Grid>
-//       </CardContent>
-//     </Card>
-//   );
-// }
-
 const MenuSet = () => {
   return (
     <Box>
@@ -145,39 +110,3 @@ const MenuSet = () => {
 };
 
 export default MenuSet;
-
-// Plain simple card
-// function CreateCard(props) {
-//   return (
-//     <Card variant="outlined" style={{ backgroundColor: "grey" }}>
-//       <CardContent>
-//         <Grid container spacing={2}>
-//           <Grid item xs={12} md={9}>
-//             <Grid container justifyContent="space-between">
-//               <Grid item>
-//                 <Typography variant="h5" align="left">
-//                   {props.name}
-//                 </Typography>
-//               </Grid>
-//               <Grid item>
-//                 <Typography variant="h5" align="right">
-//                   {props.price}
-//                 </Typography>
-//               </Grid>
-//             </Grid>
-//             <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
-//               {props.desc}
-//             </Typography>
-//           </Grid>
-//           <Grid item xs={12} md={3}>
-//             <img
-//               src={props.img}
-//               alt={"Not loading"}
-//               style={{ width: "100%", height: "100%", objectFit: "cover" }}
-//             />
-//           </Grid>
-//         </Grid>
-//       </CardContent>
-//     </Card>
-//   );
-// }

@@ -84,25 +84,8 @@ function Header() {
             />
           </Link>
 
-            {/* <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-                mr: 3, // Adds spacing between logo and menu
-              }}
-            >
-              SUSHI BŪ
-            </Typography> */}
-
-            {/* DESKTOP MENU ITEMS (ALIGNED LEFT) */}
-            <Box sx={{ display: { xs: "none", md: "flex" } }}>{renderMenuItems("white")}</Box>
+          {/* DESKTOP MENU ITEMS (ALIGNED LEFT) */}
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>{renderMenuItems("white")}</Box>
           </Box>
         </Toolbar>
       </Container>
