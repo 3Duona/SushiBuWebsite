@@ -15,7 +15,7 @@ import MenuSet from "./components/MenuSet";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';  // To apply global styles
 
-import HeaderLogo from "../src/contents/MainLogoSushiBu.jpg";
+import HeaderLogo from "../src/contents/Icons/HelmetIcon.svg";
 
 // Create a custom theme
 const theme = createTheme({
