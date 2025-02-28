@@ -14,7 +14,7 @@ const Footer = () => {
 
           <Grid item>
             <Typography variant="body2" color="inherit">
-            © {new Date().getFullYear()} Sushi bū / Visos teisės saugomos
+            © {new Date().getFullYear()} Sushi bū / Visos teisės saugomos,
             Sprendimas:
               <Link style={{ textDecoration: "none", fontWeight: "bold" }} href="http://bliumberg.lt/portfolio/"> bliumberg.lt</Link>
             </Typography>

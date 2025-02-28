@@ -6,6 +6,13 @@ import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
 import sushi_1 from "../contents/TestSushi.png";
+import sushi_2 from "../contents/SAKE-A1.jpeg";
+
+import iconVegan from "../contents/Icons/Icon_Vegan.png";
+import iconHot from "../contents/Icons/Icon_Hot.png";
+import iconHotVegan from "../contents/Icons/Icon_HotVegan.png";
+import iconHotDefault from "../contents/Icons/Icon_HotDefault.png";
+import iconVeganDefault from "../contents/Icons/Icon_VeganDefault.png";
 
 // function CreateCard(props) {
 //   const theme = useTheme();
@@ -91,7 +98,13 @@ const MenuSushi = () => {
         <Grid item xs={12} md={12} l={12}>
           <CreateCardSeparator
             name="SUSHI"
-            desc="Sushi gali būti apkepti, kaina 1eur už apkepimą"
+            desc={
+              <>
+                Sushi pažymėti {" "}
+                <img src={iconHotDefault} alt="Apkepimas" style={{ width: "20px", height: "20px" }} />
+                {" "} gali būti apkepti, kaina 1 € už apkepimą
+              </>
+            }
           ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -99,7 +112,8 @@ const MenuSushi = () => {
             name="1. SAKE"
             desc="Lašiša, Agurkas, Sezamas"
             price="4.50"
-            img={sushi_1}
+            img={sushi_2}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -107,7 +121,8 @@ const MenuSushi = () => {
             name="2. SAKE AVOCADO"
             desc="Lašiša, Avokadas, Majonezo padažas"
             price="4.70"
-            img={sushi_1}
+            img={sushi_2}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -115,7 +130,8 @@ const MenuSushi = () => {
             name="3. TEKKA"
             desc="Tunas, Agurkas, Karai padažas"
             price="4.90"
-            img={sushi_1}
+            img={sushi_2}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -124,6 +140,7 @@ const MenuSushi = () => {
             desc="Traški tigrinė krevetė, Avokadas, Karai padažas"
             price="4.80"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -132,6 +149,7 @@ const MenuSushi = () => {
             desc="Krabų lazdelės, Agurkas, Majonezo padažas"
             price="4.30"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -140,6 +158,7 @@ const MenuSushi = () => {
             desc="Ungurys, Teriyaki padažas, Agurkas, Sezamas"
             price="6.50"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -148,6 +167,7 @@ const MenuSushi = () => {
             desc="Jūros dumbliai, Agurkas, Sezamas, Karai padažas"
             price="4.20"
             img={sushi_1}
+            icon={iconHotVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -156,6 +176,7 @@ const MenuSushi = () => {
             desc="Agurkas, Sezamas"
             price="3.90"
             img={sushi_1}
+            icon={iconHotVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -164,6 +185,7 @@ const MenuSushi = () => {
             desc="Avokadas, Sezamas"
             price="4.50"
             img={sushi_1}
+            icon={iconHotVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -172,6 +194,7 @@ const MenuSushi = () => {
             desc="Kepta lašiša, Karai padažas, Paprika, Agurkas, Svogūnų traškučiai, Teriyaki padažas"
             price="7.50"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -180,6 +203,7 @@ const MenuSushi = () => {
             desc="Tunas, Agurkas, Svogūnų traškučiai, Sezamas, Karai padažas"
             price="7.90"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -196,6 +220,7 @@ const MenuSushi = () => {
             desc="Krabų lazdelės, Sūrio kremas, Avokadas, Masago ikrai, Agurkas"
             price="7.90"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -212,6 +237,7 @@ const MenuSushi = () => {
             desc="Lašiša, Sūrio kremas, Agurkas, Wakame, Sezamas"
             price="7.90"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -228,6 +254,7 @@ const MenuSushi = () => {
             desc="Traški tigrinė krevetė, Sūrio kremas, Avokadas, Agurkas, Masago ikrai"
             price="7.90"
             img={sushi_1}
+            icon={iconHot}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -276,6 +303,7 @@ const MenuSushi = () => {
             desc="Avokadas, Paprika, Agurkas, Morka, Iceberg salota, Sezamas, Krapų padažas"
             price="6.50"
             img={sushi_1}
+            icon={iconHotVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -284,14 +312,7 @@ const MenuSushi = () => {
             desc="Tempuroje keptas baklažanas, Sūrio kremas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas"
             price="6.90"
             img={sushi_1}
-          ></CreateCard>
-        </Grid>
-        <Grid item xs={12} md={6} l={4}>
-          <CreateCard
-            name="25. MAX Testing"
-            desc="Tempuroje keptas baklažanas Tempuroje keptas baklažanas Tempuroje keptas baklažanas Tempuroje keptas baklažanas Tempuroje keptas baklažanas, Sūrio kremas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas, Svogūnų traškučiai, Iceberg salota, Teriyaki padažas"
-            price="7000000000000000000000000.90"
-            img={sushi_1}
+            icon={iconHotVegan}
           ></CreateCard>
         </Grid>
       </Grid>

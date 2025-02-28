@@ -4,6 +4,8 @@ import { Box, Grid} from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
+import iconVegan from "../contents/Icons/Icon_Vegan.png";
+
 import sushiSet_1 from "../contents/SushiSet_Bu1.jpg";
 import sushiSet_2 from "../contents/SushiSet_Bu2.jpg";
 import sushiSet_3 from "../contents/SushiSet_Bu3.jpg";
@@ -86,6 +88,7 @@ const MenuSet = () => {
             desc="Wakame 4 vnt, Avocado 4 vnt, Yasai 8 vnt"
             price="15.00"
             img={sushiSet_4}
+            icon={iconVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>

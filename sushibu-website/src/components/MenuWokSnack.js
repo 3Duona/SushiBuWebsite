@@ -4,6 +4,12 @@ import { Box, Grid} from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
+import iconVegan from "../contents/Icons/Icon_Vegan.png";
+import iconHot from "../contents/Icons/Icon_Hot.png";
+import iconHotVegan from "../contents/Icons/Icon_HotVegan.png";
+import iconHotDefault from "../contents/Icons/Icon_HotDefault.png";
+import iconVeganDefault from "../contents/Icons/Icon_VeganDefault.png";
+
 import wok_1 from "../contents/WokSnack_Wok.jpg";
 import snack_1 from "../contents/WokSnack_43_Set.jpg";
 
@@ -53,7 +59,7 @@ const MenuBao = () => {
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="31. TORI"
-            desc="Su vištiena"
+            desc="Su Vištiena"
             price="8.50"
             img={wok_1}
           ></CreateCard>
@@ -61,7 +67,7 @@ const MenuBao = () => {
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="32. EBI"
-            desc="Su krevetėm"
+            desc="Su Krevetėm"
             price="8.90"
             img={wok_1}
           ></CreateCard>
@@ -69,16 +75,17 @@ const MenuBao = () => {
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="33. NASU"
-            desc="Su traškiu baklažanu"
+            desc="Su Traškiu Baklažanu"
             price="7.90"
             img={wok_1}
+            icon={iconVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={12} l={12}>
           <CreateCardSeparator 
             name="UŽKANDŽIAI" 
             desc="Pasirinkite padažą: Sweet čili, Aštrus, Teriyaki, Krapų, Sojos, Majonezo"
-            titleVariant="h5"
+            titleVariant="h4"
           ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -87,6 +94,7 @@ const MenuBao = () => {
             desc="Wakame, Agurkas, Sweet čili morka, Edamame pupelės, Sezamas, Iceberg salota"
             price="5.50"
             img={snack_1}
+            icon={iconVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -127,6 +135,7 @@ const MenuBao = () => {
             desc="Daržovės tešloje 8 vnt"
             price="5.20"
             img={snack_1}
+            icon={iconVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={6} l={4}>

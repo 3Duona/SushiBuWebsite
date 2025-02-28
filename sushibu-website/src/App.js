@@ -15,6 +15,8 @@ import MenuSet from "./components/MenuSet";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';  // To apply global styles
 
+import HeaderLogo from "../src/contents/MainLogoSushiBu.jpg";
+
 // Create a custom theme
 const theme = createTheme({
   typography: {
@@ -35,6 +37,7 @@ function App() {
     >
       <Helmet>
         <title>Sushi bū</title>
+        <link rel="icon" type="image/png" href={HeaderLogo} sizes="16x16" />
       </Helmet>
       <Header />
       <Banner />

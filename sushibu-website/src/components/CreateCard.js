@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 
-function CreateCard({ name, price, img, desc }) {
+function CreateCard({ name, price, img, icon, desc }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md")); // Check if screen is xs (mobile)
 
@@ -19,20 +19,13 @@ function CreateCard({ name, price, img, desc }) {
       <CardContent style={{ padding: 0 }}>
         <Grid container spacing={0}>
             {/* Product Image */}
-            {/* <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
-                <img
-                src={img}
-                alt="Not loading"
-                style={{
-                    width: "100%",
-                    height: "auto",
-                    objectFit: "cover",
-                    display: "block",
-                    maxHeight: "250px",
-                }}
-                />
-            </Grid> */}
-            <Grid item xs={12} md={6} style={{ padding: 0, margin: 0, position: "relative" }}>
+            <Grid 
+              item 
+              xs={12} 
+              md={6} 
+              style={{ padding: 0, margin: 0, position: "relative" }} // Ensure positioning context
+            >
+              {/* Main Product Image */}
               <img
                 src={img}
                 alt="Not loading"
@@ -44,7 +37,24 @@ function CreateCard({ name, price, img, desc }) {
                   maxHeight: isMobile ? "200px" : "500px", // Mobile: 200px, Desktop: 500px
                 }}
               />
-           </Grid>
+
+              {/* Overlay Icons */}
+              {icon && (
+              <img
+                  src={icon}
+                  alt=""
+                  style={{
+                    position: "absolute",
+                    bottom: "10px",
+                    left: "10px",
+                    width: isMobile ? "50px" : "60px",
+                    height: "auto",
+                    opacity: 0.8,
+                  }}
+                />
+              )}
+            </Grid>
+
           {/* Product Description */}
           <Grid
             item
