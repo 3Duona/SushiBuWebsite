@@ -1,16 +1,12 @@
 import React from "react";
 import { Container, Link, Box, Typography } from "@mui/material";
-import { Icon } from "@mui/material";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GoogleIcon from "@mui/icons-material/Google";
 
-import iconWolt from "../content/Wolt.jpeg";
-import iconBolt from "../content/Bolt.jpeg";
-
-import iconW from "../content/Icons/wolt.svg";
-import iconB from "../content/Icons/bolt.svg";
+import iconWolt from "../content/Icons/wolt.png";
+import iconBolt from "../content/Icons/bolt.png";
 
 const Banner = () => {
   return (
@@ -37,21 +33,25 @@ const Banner = () => {
 
         {/* Wolt Link */}
         <Link href="https://wolt.com/lt/ltu/kaunas/restaurant/sushibu" target="_blank" style={{ color: "white" }}>
-        <Icon sx={{ color: "white" }}>
-            <img src={iconWolt} alt="Not loading" height={25} width={25} />
-          </Icon>
+          <img
+            src={iconWolt}
+            alt="Wolt"
+            style={{ height: "25px", width: "25px", borderRadius: "5px", objectFit: "contain" }}
+          />
         </Link>
 
         {/* Bolt Link */}
         <Link href="https://food.bolt.eu/lt-LT/13-kaunas/p/30241/info" target="_blank" style={{ color: "white" }}>
-          <Icon sx={{ color: "white" }}>
-            <img src={iconBolt} alt="Not loading" height={25} width={25} />
-          </Icon>
+          <img
+            src={iconBolt}
+            alt="Bolt"
+            style={{ height: "25px", width: "25px", borderRadius: "5px", objectFit: "contain" }}
+          />
         </Link>
       </Box>
 
       {/* Contact Info */}
-      <Typography>
+      <Typography sx={{ fontWeight: "bold",  fontSize: "24px"}}>
         Telefonas užsakymams:{" "}
         <a href="tel:867796967" style={{ color: "white", textDecoration: "none" }}>
           <b>+370 677 96967</b>
@@ -63,3 +63,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+// sx={{ fontSize: "16px"}}

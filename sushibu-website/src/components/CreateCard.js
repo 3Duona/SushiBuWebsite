@@ -69,7 +69,7 @@ function CreateCard({ name, price, img, icon, desc }) {
               height: "100%",
             }}
           >
-            <Typography variant="h5" align="left" >
+            <Typography variant="h5" align="left">
               {name.split(";").map((part, index) => (
                 <span key={index} style={{ fontWeight: index === 0 ? "bold" : "normal" }}>
                   {part}
@@ -79,12 +79,12 @@ function CreateCard({ name, price, img, icon, desc }) {
             </Typography>
 
             {isMobile ? (
-              <Typography variant="body2">{desc}</Typography>
+              <Typography variant="body2" sx={{ fontSize: "16px"}}>{desc}</Typography>
             ) : (
               <ul style={{ paddingLeft: "20px", marginTop: "8px", marginBottom: "8px" }}>
                 {desc.replace(/[()]/g, '').split(",").map((item, index) => (
                   <li key={index}>
-                    <Typography variant="body2">{item.trim()}</Typography>
+                    <Typography variant="body2" sx={{ fontSize: "16px"}}>{item.trim()}</Typography>
                   </li>
                 ))}
               </ul>

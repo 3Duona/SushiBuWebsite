@@ -5,11 +5,11 @@ import CreateCardSeparator from "./CreateCardSeparator";
 
 import iconVegan from "../content/Icons/Icon_Vegan.png";
 
-import sushiSet_1 from "../content/SushiSet_Bu1.jpg";
-import sushiSet_2 from "../content/SushiSet_Bu2.jpg";
-import sushiSet_3 from "../content/SushiSet_Bu3.jpg";
-import sushiSet_4 from "../content/SushiSet_Bu4.jpg";
-import sushiSet_5 from "../content/SushiSet_Bu5.jpg";
+import sushiSet_1 from "../content/SushiSet/SushiSet_Bu1.jpg";
+import sushiSet_2 from "../content/SushiSet/SushiSet_Bu2.jpg";
+import sushiSet_3 from "../content/SushiSet/SushiSet_Bu3.jpg";
+import sushiSet_4 from "../content/SushiSet/SushiSet_Bu4.jpg";
+import sushiSet_BigBu from "../content/SushiSet/SushiSet_BigBu.jpg";
 
 const MenuSet = () => {
   return (
@@ -100,7 +100,7 @@ const MenuSet = () => {
             name="BIG BŪ; (64 vnt)"
             desc="Alaska 8 vnt, Philadelphia 8 vnt, California 8 vnt, Ebi Avocado 8 vnt, Sezame Maguro 8 vnt, Sake Wakame 8 vnt, Tataki Sake 8 vnt, Tori 8 vnt"
             price="70.00"
-            img={sushiSet_5}
+            img={sushiSet_BigBu}
           ></CreateCard>
         </Grid>
       </Grid>
