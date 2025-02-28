@@ -2,10 +2,10 @@ import React from "react";
 import { Box, Grid, Card, CardContent } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-import MenuSelector_Sushi from "../contents/MenuSelector_Sushi.jpg";
-import MenuSelector_SushiSet from "../contents/MenuSelector_SushiSet.jpg";
-import MenuSelector_BowlBao from "../contents/MenuSelector_BowlBao.jpg";
-import MenuSelector_WokSnack from "../contents/MenuSelector_WokSnack.jpg";
+import MenuSelector_Sushi from "../content/MenuSelector_Sushi.jpg";
+import MenuSelector_SushiSet from "../content/MenuSelector_SushiSet.jpg";
+import MenuSelector_BowlBao from "../content/MenuSelector_BowlBao.jpg";
+import MenuSelector_WokSnack from "../content/MenuSelector_WokSnack.jpg";
 
 function CreateCard(props) {
   const navigate = useNavigate();

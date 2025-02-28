@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
-import HeaderLogo from "../contents/MainLogoSushiBu.jpg";
+import HeaderLogo from "../content/MainLogoSushiBu.jpg";
 
 const pages = {
   SUSHI: "MenuSushi",

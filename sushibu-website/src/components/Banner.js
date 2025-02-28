@@ -2,12 +2,15 @@ import React from "react";
 import { Container, Link, Box, Typography } from "@mui/material";
 import { Icon } from "@mui/material";
 
-import iconWolt from "../contents/Wolt.jpeg";
-import iconBolt from "../contents/Bolt.jpeg";
-
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GoogleIcon from "@mui/icons-material/Google";
+
+import iconWolt from "../content/Wolt.jpeg";
+import iconBolt from "../content/Bolt.jpeg";
+
+import iconW from "../content/Icons/wolt.svg";
+import iconB from "../content/Icons/bolt.svg";
 
 const Banner = () => {
   return (

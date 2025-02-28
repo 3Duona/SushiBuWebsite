@@ -1,17 +1,16 @@
 import React from "react";
 import { Box, Grid} from "@mui/material";
-// import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
-import iconVegan from "../contents/Icons/Icon_Vegan.png";
-import iconHot from "../contents/Icons/Icon_Hot.png";
-import iconHotVegan from "../contents/Icons/Icon_HotVegan.png";
-import iconHotDefault from "../contents/Icons/Icon_HotDefault.png";
-import iconVeganDefault from "../contents/Icons/Icon_VeganDefault.png";
+import iconVegan from "../content/Icons/Icon_Vegan.png";
+import iconHot from "../content/Icons/Icon_Hot.png";
+import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
+import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
+import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
 
-import wok_1 from "../contents/WokSnack_Wok.jpg";
-import snack_1 from "../contents/WokSnack_43_Set.jpg";
+import wok_1 from "../content/WokSnack_Wok.jpg";
+import snack_1 from "../content/WokSnack_43_Set.jpg";
 
 const MenuBao = () => {
   return (

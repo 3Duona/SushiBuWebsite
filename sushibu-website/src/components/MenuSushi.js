@@ -3,14 +3,16 @@ import { Box, Grid} from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
-import sushi_1 from "../contents/TestSushi.png";
-import sushi_2 from "../contents/SAKE-A1.jpeg";
+import sushi_1 from "../content/TestSushi.png";
+import sushi_2 from "../content/SAKE-A1.jpeg";
 
-import iconVegan from "../contents/Icons/Icon_Vegan.png";
-import iconHot from "../contents/Icons/Icon_Hot.png";
-import iconHotVegan from "../contents/Icons/Icon_HotVegan.png";
-import iconHotDefault from "../contents/Icons/Icon_HotDefault.png";
-import iconVeganDefault from "../contents/Icons/Icon_VeganDefault.png";
+import iconVegan from "../content/Icons/Icon_Vegan.png";
+import iconHot from "../content/Icons/Icon_Hot.png";
+import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
+import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
+import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
+
+import iconW from "../content/Icons/wolt.svg";
 
 const MenuSushi = () => {
   return (

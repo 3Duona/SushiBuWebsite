@@ -1,16 +1,15 @@
 import React from "react";
 import { Box, Grid} from "@mui/material";
-// import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
-import iconVegan from "../contents/Icons/Icon_Vegan.png";
+import iconVegan from "../content/Icons/Icon_Vegan.png";
 
-import sushiSet_1 from "../contents/SushiSet_Bu1.jpg";
-import sushiSet_2 from "../contents/SushiSet_Bu2.jpg";
-import sushiSet_3 from "../contents/SushiSet_Bu3.jpg";
-import sushiSet_4 from "../contents/SushiSet_Bu4.jpg";
-import sushiSet_5 from "../contents/SushiSet_Bu5.jpg";
+import sushiSet_1 from "../content/SushiSet_Bu1.jpg";
+import sushiSet_2 from "../content/SushiSet_Bu2.jpg";
+import sushiSet_3 from "../content/SushiSet_Bu3.jpg";
+import sushiSet_4 from "../content/SushiSet_Bu4.jpg";
+import sushiSet_5 from "../content/SushiSet_Bu5.jpg";
 
 const MenuSet = () => {
   return (
