@@ -4,6 +4,10 @@ import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
 import iconVegan from "../content/Icons/Icon_Vegan.png";
+// import iconHot from "../content/Icons/Icon_Hot.png";
+// import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
+// import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
+// import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
 
 import sushiSet_1 from "../content/SushiSet/SushiSet_Bu1.jpg";
 import sushiSet_2 from "../content/SushiSet/SushiSet_Bu2.jpg";

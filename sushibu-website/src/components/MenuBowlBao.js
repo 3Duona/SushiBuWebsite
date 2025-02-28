@@ -4,10 +4,10 @@ import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
 import iconVegan from "../content/Icons/Icon_Vegan.png";
-import iconHot from "../content/Icons/Icon_Hot.png";
-import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
-import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
-import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
+// import iconHot from "../content/Icons/Icon_Hot.png";
+// import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
+// import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
+// import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
 
 import bowl_1 from "../content/BowlBao_Bowl1.jpg"
 
@@ -28,7 +28,8 @@ const MenuBowl = () => {
         <Grid item xs={12} md={12} l={12}>
           <CreateCardSeparator
             name="BOWL"
-            desc={"Visi Bowl dubenėliai ruošiami su VIENODAIS PRIEDAIS: ryžiai, agurkas, edamame pupelės, sweet čili morkos, wakame, marinuotas imbieras, citrina, nori lapai, iceberg salota \n Pasirinktinai padažas: Sweet čili, Teriyaki, Krapų, Čili, Karai"}
+            desc={<>Visi Bowl dubenėliai ruošiami su <b>VIENODAIS PRIEDAIS</b>: ryžiai, agurkas, edamame pupelės, sweet čili morkos, wakame, marinuotas imbieras, citrina, nori lapai, iceberg salota
+            <br></br><b>Pasirinktinai padažas</b>: Sweet čili, Teriyaki, Krapų, Čili arba Karai</>}
           ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>

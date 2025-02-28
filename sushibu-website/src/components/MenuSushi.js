@@ -3,7 +3,7 @@ import { Box, Grid} from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
-import iconVegan from "../content/Icons/Icon_Vegan.png";
+// import iconVegan from "../content/Icons/Icon_Vegan.png";
 import iconHot from "../content/Icons/Icon_Hot.png";
 import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
 import iconHotDefault from "../content/Icons/Icon_HotDefault.png";

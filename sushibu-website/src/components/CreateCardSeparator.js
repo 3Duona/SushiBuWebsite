@@ -22,7 +22,7 @@ function CreateCardSeparator(props) {
           </Grid>
 
           <Grid item xs={12} md={10} container justifyContent="left" alignItems="center">
-            <Typography variant="body2" sx={{paddingLeft: "20px", color: "white", fontSize: "16px"}} style={{ whiteSpace: "pre-line" }}>
+            <Typography variant="body2" sx={{ whiteSpace: "pre-line", paddingLeft: "20px", color: "white", fontSize: "16px"}} style={{ whiteSpace: "pre-line" }}>
               {props.desc}
             </Typography>
           </Grid>

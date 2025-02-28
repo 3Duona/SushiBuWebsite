@@ -4,10 +4,10 @@ import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
 import iconVegan from "../content/Icons/Icon_Vegan.png";
-import iconHot from "../content/Icons/Icon_Hot.png";
-import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
-import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
-import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
+// import iconHot from "../content/Icons/Icon_Hot.png";
+// import iconHotVegan from "../content/Icons/Icon_HotVegan.png";
+// import iconHotDefault from "../content/Icons/Icon_HotDefault.png";
+// import iconVeganDefault from "../content/Icons/Icon_VeganDefault.png";
 
 import Wok31 from "../content/WokSnack/31.ToriWok.JPG";
 import Wok32 from "../content/WokSnack/32.EbiWok.JPG";
@@ -27,7 +27,15 @@ const MenuBao = () => {
         <Grid item xs={12} md={12} l={12}>
           <CreateCardSeparator 
             name="WOK" 
-            desc={"Visi Wok pateikiami su VIENODAIS PRIEDAIS: morka, česnakas, cukinija, edamame pupelės, paprika, pievagrybiai, imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas \n Pasirinkite su Ryžiais ar Makaronais \n Pasirinkite padažą: Sweet čili, Aštrus,Teriyaki"}>
+            desc={
+              <>
+                Visi Wok pateikiami su <b>VIENODAIS PRIEDAIS</b>: morka, česnakas, cukinija, edamame pupelės, paprika, 
+                pievagrybiai, imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas.
+                <br></br><b>Pasirinkite</b>: su Ryžiais arba Makaronais. 
+                <br></br><b>Pasirinkite</b>: Sweet čili, Aštrus arba Teriyaki.
+              </>
+            }
+          >
           </CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
@@ -58,7 +66,7 @@ const MenuBao = () => {
         <Grid item xs={12} md={12} l={12}>
           <CreateCardSeparator 
             name="UŽKANDŽIAI" 
-            desc="Pasirinkite padažą: Sweet čili, Aštrus, Teriyaki, Krapų, Sojos, Majonezo"
+            desc={<><b>Pasirinkite padažą</b>: Sweet čili, Aštrus, Teriyaki, Krapų, Sojos arba Majonezo</>}
             titleVariant="h4"
           ></CreateCardSeparator>
         </Grid>
