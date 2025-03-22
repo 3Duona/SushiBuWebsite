@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('content/FonasSushiBu.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.navbar {
+  background-color: black !important;
+  border-radius: 0px 0px 20px 20px; /* Rounded only at bottom */
+}
+
+.footer {
+  background-color: black !important;
+  border-radius: 20px 20px 0px 0px; /* Rounded only at top */
+}
+
+.navmap {
+  overflow: hidden;
+  border-radius: 20px;
+}
