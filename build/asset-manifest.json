@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SushiBuWebsite/static/css/main.cfaeff9c.css",
-    "main.js": "/SushiBuWebsite/static/js/main.8b45b27c.js",
+    "main.js": "/SushiBuWebsite/static/js/main.6cad93dd.js",
     "static/js/787.f38a7e8a.chunk.js": "/SushiBuWebsite/static/js/787.f38a7e8a.chunk.js",
     "static/media/BowlBao_Bowl1.jpg": "/SushiBuWebsite/static/media/BowlBao_Bowl1.d5447a2fe061deb2307c.jpg",
     "static/media/FonasSushiBu.jpg": "/SushiBuWebsite/static/media/FonasSushiBu.d54ca2627f9d85db5fc2.jpg",
@@ -62,11 +62,11 @@
     "static/media/HelmetIcon.svg": "/SushiBuWebsite/static/media/HelmetIcon.e98bc3020106e30ed14ee51236ebb8fb.svg",
     "index.html": "/SushiBuWebsite/index.html",
     "main.cfaeff9c.css.map": "/SushiBuWebsite/static/css/main.cfaeff9c.css.map",
-    "main.8b45b27c.js.map": "/SushiBuWebsite/static/js/main.8b45b27c.js.map",
+    "main.6cad93dd.js.map": "/SushiBuWebsite/static/js/main.6cad93dd.js.map",
     "787.f38a7e8a.chunk.js.map": "/SushiBuWebsite/static/js/787.f38a7e8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfaeff9c.css",
-    "static/js/main.8b45b27c.js"
+    "static/js/main.6cad93dd.js"
   ]
 }

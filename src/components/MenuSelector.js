@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Grid, Card, CardContent } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -22,7 +22,7 @@ function CreateCard(props) {
     <div onClick={handleClick} style={{ cursor: "pointer" }}>
       <Card
         variant="outlined"
-        style={{         
+        style={{
           margin: 0,
           padding: 0,
           border: "1px solid white",
@@ -51,6 +51,13 @@ function CreateCard(props) {
 }
 
 const MenuSelector = () => {
+  useEffect(() => {
+    // This will ensure that the page is scrolled to the top and component is loaded after render
+    window.requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+    });
+  }, []); // Empty dependency array ensures this runs only once when the component is mounted.
+
   return (
     <Box>
       <Grid container spacing={2}>
