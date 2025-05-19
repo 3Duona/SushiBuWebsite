@@ -31,7 +31,12 @@ function CreateCard(props) {
       >
         <CardContent style={{ padding: 0, margin: 0, position: "relative" }}>
           <Grid container spacing={0}>
-            <Grid item xs={12} md={12} style={{ padding: 0, margin: 0, position: "relative" }}>
+            <Grid
+              item
+              xs={12}
+              md={12}
+              style={{ padding: 0, margin: 0, position: "relative" }}
+            >
               <img
                 src={props.img}
                 alt="Not loading"
