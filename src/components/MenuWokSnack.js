@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid} from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import CreateCard from "./CreateCard";
 import CreateCardSeparator from "./CreateCardSeparator";
 
@@ -25,24 +25,26 @@ const MenuBao = () => {
     <Box>
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} l={12}>
-          <CreateCardSeparator 
-            name="WOK" 
+          <CreateCardSeparator
+            name="WOK"
             desc={
               <>
-                Visi Wok pateikiami su <b>VIENODAIS PRIEDAIS</b>: morka, česnakas, cukinija, edamame pupelės, paprika, 
-                pievagrybiai, imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas.
-                <br></br><b>Pasirinkite</b>: su Ryžiais arba Makaronais. 
-                <br></br><b>Pasirinkite</b>: Sweet čili, Aštrus arba Teriyaki.
+                Visi Wok pateikiami su <b>VIENODAIS PRIEDAIS</b>: morka,
+                česnakas, cukinija, edamame pupelės, paprika, pievagrybiai,
+                imbieras, citrina, svogūnų traškučiai, sezamas, sojų padažas.
+                <br></br>
+                <b>Pasirinkite</b>: su Ryžiais arba Makaronais.
+                <br></br>
+                <b>Pasirinkite</b>: Sweet čili, Aštrus arba Teriyaki.
               </>
             }
-          >
-          </CreateCardSeparator>
+          ></CreateCardSeparator>
         </Grid>
         <Grid item xs={12} md={6} l={4}>
           <CreateCard
             name="31. TORI"
             desc="Su Vištiena"
-            price="8.50"
+            price="9.00"
             img={Wok31}
           ></CreateCard>
         </Grid>
@@ -50,7 +52,7 @@ const MenuBao = () => {
           <CreateCard
             name="32. EBI"
             desc="Su Krevetėm"
-            price="8.90"
+            price="10.00"
             img={Wok32}
           ></CreateCard>
         </Grid>
@@ -58,15 +60,20 @@ const MenuBao = () => {
           <CreateCard
             name="33. NASU"
             desc="Su Traškiu Baklažanu"
-            price="7.90"
+            price="9.00"
             img={Wok33}
             icon={iconVegan}
           ></CreateCard>
         </Grid>
         <Grid item xs={12} md={12} l={12}>
-          <CreateCardSeparator 
-            name="UŽKANDŽIAI" 
-            desc={<><b>Pasirinkite padažą</b>: Sweet čili, Aštrus, Teriyaki, Krapų, Sojos arba Majonezo</>}
+          <CreateCardSeparator
+            name="UŽKANDŽIAI"
+            desc={
+              <>
+                <b>Pasirinkite padažą</b>: Sweet čili, Aštrus, Teriyaki, Krapų,
+                Sojos arba Majonezo
+              </>
+            }
             titleVariant="h4"
           ></CreateCardSeparator>
         </Grid>
@@ -74,7 +81,7 @@ const MenuBao = () => {
           <CreateCard
             name="37. WAKAME"
             desc="Wakame, Agurkas, Sweet čili morka, Edamame pupelės, Sezamas, Iceberg salota"
-            price="5.50"
+            price="6.90"
             img={Snack37}
             icon={iconVegan}
           ></CreateCard>
@@ -91,7 +98,7 @@ const MenuBao = () => {
           <CreateCard
             name="39. KATSU TORI"
             desc="Traškios vištienos juostelės 6 vnt"
-            price="5.90"
+            price="6.50"
             img={Snack39}
           ></CreateCard>
         </Grid>
@@ -107,7 +114,7 @@ const MenuBao = () => {
           <CreateCard
             name="41. KALMARŲ ŽIEDAI"
             desc="Kalmarų žiedai 8 vnt"
-            price="5.50"
+            price="5.90"
             img={Snack41}
           ></CreateCard>
         </Grid>
@@ -115,7 +122,7 @@ const MenuBao = () => {
           <CreateCard
             name="42. SPRING ROLLS"
             desc="Daržovės tešloje 8 vnt"
-            price="5.20"
+            price="5.90"
             img={Snack42}
             icon={iconVegan}
           ></CreateCard>
@@ -124,8 +131,17 @@ const MenuBao = () => {
           <CreateCard
             name="43. UŽKANDŽIŲ RINKINYS"
             desc="Traškios tigrinės krevetės 4 vnt, Sūrio spurgytės 4vnt, Spring rolls 4vnt, Kalmarų žiedai 4vnt"
-            price="12.50"
+            price="15.00"
             img={Snack43}
+          ></CreateCard>
+        </Grid>
+        <Grid item xs={12} md={6} l={4}>
+          <CreateCard
+            name="44. TRAŠKŪS BAKLAŽANAI"
+            desc="Traškios Baklažanai"
+            price="6.90"
+            img={Snack39}
+            icon={iconVegan}
           ></CreateCard>
         </Grid>
       </Grid>
