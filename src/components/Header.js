@@ -30,11 +30,18 @@ function Header() {
   // Function to generate menu items
   const renderMenuItems = (color) =>
     Object.entries(pages).map(([displayName, routePath]) => (
-      <MenuItem key={routePath} onClick={handleCloseNavMenu}>
-        <Typography textAlign="center">
-          <Link style={{ textDecoration: "none", fontWeight: "bold", color }} to={`/${routePath}`}>
-            {displayName}
-          </Link>
+      <MenuItem
+        key={routePath}
+        onClick={handleCloseNavMenu}
+        component={Link}
+        to={`/${routePath}`}
+        sx={{
+          textDecoration: "none",
+          color,
+        }}
+      >
+        <Typography textAlign="center" sx={{ fontWeight: "bold" }}>
+          {displayName}
         </Typography>
       </MenuItem>
     ));
@@ -45,7 +52,11 @@ function Header() {
         <Toolbar disableGutters sx={{ display: "flex", alignItems: "center" }}>
           {/* MOBILE: Burger Menu on the Left */}
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton size="large" onClick={handleOpenNavMenu} color="inherit">
+            <IconButton
+              size="large"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
               <MenuIcon />
             </IconButton>
             <Menu
@@ -59,33 +70,34 @@ function Header() {
               sx={{
                 display: { xs: "block", md: "none" },
                 "& .MuiPaper-root": {
-                  backgroundColor: "black",  // Set the dropdown background color to black
+                  backgroundColor: "black", // Set the dropdown background color to black
                 },
                 "& .MuiMenuItem-root": {
-                  color: "white",  // Set text color inside the dropdown to white
+                  color: "white", // Set text color inside the dropdown to white
                 },
               }}
             >
               {renderMenuItems("white")}
-          </Menu>
+            </Menu>
           </Box>
 
           {/* LOGO + NAME + MENU ITEMS CONTAINER (LEFT-ALIGNED) */}
           <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
-            
-          <Link to="/">
-            <img
-              src={HeaderLogo}
-              alt="Logo"
-              style={{
-                width: "80px",
-                height: "auto",
-              }}
-            />
-          </Link>
+            <Link to="/">
+              <img
+                src={HeaderLogo}
+                alt="Logo"
+                style={{
+                  width: "80px",
+                  height: "auto",
+                }}
+              />
+            </Link>
 
-          {/* DESKTOP MENU ITEMS (ALIGNED LEFT) */}
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>{renderMenuItems("white")}</Box>
+            {/* DESKTOP MENU ITEMS (ALIGNED LEFT) */}
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              {renderMenuItems("white")}
+            </Box>
           </Box>
         </Toolbar>
       </Container>
